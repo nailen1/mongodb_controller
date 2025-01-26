@@ -32,3 +32,16 @@ htmlcov/
 
 # MongoDB specific
 *.mongodb.js
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Local development files
+test-*.py
+build-*.py
+examples/
+notebooks/
+
+# Documentation build
+docs/_build/

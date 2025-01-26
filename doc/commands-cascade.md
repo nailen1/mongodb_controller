@@ -23,3 +23,17 @@ pip install -r requirements.txt
 ### Git Configuration (21:21:52)
 - Added `.gitignore` file for Python project
 - Committed and pushed changes to remote repository
+
+## 2025-01-27
+### 02:07 - PyPI 배포 준비
+```bash
+# 패키지 빌드 도구 설치
+pip install --upgrade build twine
+
+# 배포용 패키지 빌드
+python -m build
+```
+
+실행 결과:
+- `dist/mongodb_controller-0.1.0.tar.gz` 생성
+- `dist/mongodb_controller-0.1.0-py3-none-any.whl` 생성

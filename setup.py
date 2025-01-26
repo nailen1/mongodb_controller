@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='mongodb_controller',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     install_requires=[
         'pymongo>=4.10.1',
         'pandas>=2.2.3',
         'python-dotenv>=1.0.0',
-        'aws-s3-controller>=0.6.1',
+        'aws-s3-controller>=0.6.4',
         'shining-pebbles>=0.2.72',
     ],
     author='June Young Park',

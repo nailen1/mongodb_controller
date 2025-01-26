@@ -45,3 +45,6 @@ notebooks/
 
 # Documentation build
 docs/_build/
+
+# Windsurf specific
+.windsurfrules

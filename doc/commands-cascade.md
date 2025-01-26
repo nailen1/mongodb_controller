@@ -37,3 +37,13 @@ python -m build
 실행 결과:
 - `dist/mongodb_controller-0.1.0.tar.gz` 생성
 - `dist/mongodb_controller-0.1.0-py3-none-any.whl` 생성
+
+### 02:10 - PyPI 업로드
+```bash
+# PyPI에 패키지 업로드
+python -m twine upload dist/*
+```
+
+실행 결과:
+- 패키지가 성공적으로 PyPI에 업로드됨
+- 패키지 URL: https://pypi.org/project/mongodb-controller/0.1.0/

@@ -43,7 +43,8 @@ build-*.py
 examples/
 notebooks/
 
-# Documentation build
+# Documentation
+doc/
 docs/_build/
 
 # Windsurf specific

@@ -52,7 +52,7 @@ def insert_data_in_collection(data, collection):
 
 def insert_many_data_in_collection(data_list, collection):
     try:
-        result = collection.insert_many(data_list)
+        result = collection.insert_many(data_list, ordered=False)
         return result.inserted_ids
     except Exception as e:
         print(f"Error inserting data: {e}")

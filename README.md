@@ -11,6 +11,12 @@ A Python module for managing fund time series data using MongoDB. This module pr
 
 ## Version History
 
+### 0.2.4 (2025-04-14)
+- 편의성 모듈 추가
+- MongoDB 컬렉션 상수 구조 개선
+- 추가 컬렉션 지원 (3233, 3412, 3421)
+- 컬렉션 딕셔너리 매핑 추가
+
 ### 0.2.3 (2025-04-14)
 - Removed Jupyter Notebook files from repository
 - Fixed build issues to include all module components

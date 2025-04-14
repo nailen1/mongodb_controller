@@ -1,7 +1,6 @@
 from .mongodb_collections import (
     COLLECTION_2110,
     COLLECTION_2160,
-    COLLECTION_2205,
     COLLECTION_2205_SNAPSHOT,
     COLLECTION_8186,
     COLLECTION_BBG_TIMESERIES,
@@ -18,9 +17,6 @@ def get_keys_menu2160():
     return get_keys_of_collection(COLLECTION_2160)
 
 def get_keys_menu2205():
-    return get_keys_of_collection(COLLECTION_2205)
-
-def get_keys_menu2205_snapshot():
     return get_keys_of_collection(COLLECTION_2205_SNAPSHOT)
 
 def get_keys_menu8186():

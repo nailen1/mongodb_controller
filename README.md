@@ -11,6 +11,11 @@ A Python module for managing fund time series data using MongoDB. This module pr
 
 ## Version History
 
+### 0.2.3 (2025-04-14)
+- Removed Jupyter Notebook files from repository
+- Fixed build issues to include all module components
+- Ensured all utility functions are properly exported
+
 ### 0.2.2 (2025-04-14)
 - Updated dependencies
 - Fixed module imports

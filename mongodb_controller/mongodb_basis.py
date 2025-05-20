@@ -48,7 +48,7 @@ def insert_data_in_collection(data, collection):
        return result.inserted_id
    except Exception as e:
        print(f"Error inserting data: {e}")
-       return None
+       return False
 
 def insert_many_data_in_collection(data_list, collection):
     try:
@@ -56,7 +56,7 @@ def insert_many_data_in_collection(data_list, collection):
         return result.inserted_ids
     except Exception as e:
         print(f"Error inserting data: {e}")
-        return None
+        return False
 
 def insert_if_not_duplicate(data, collection):
     query = data.copy()
@@ -87,3 +87,29 @@ def get_all_collections(db):
 
 def get_all_collections_with_info(db):
     return db.list_collections()
+
+def find_data_by_date_range(collection, date_field, start_date, end_date, additional_query=None):
+    query = {
+        date_field: {
+            '$gte': start_date,
+            '$lte': end_date
+        }
+    }
+    
+    if additional_query:
+        query.update(additional_query)
+    
+    return list(collection.find(query))
+
+def count_data_by_date_range(collection, date_field, start_date, end_date, additional_query=None):
+    query = {
+        date_field: {
+            '$gte': start_date,
+            '$lte': end_date
+        }
+    }
+    
+    if additional_query:
+        query.update(additional_query)
+    
+    return collection.count_documents(query)

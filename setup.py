@@ -1,16 +1,13 @@
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setup(
     name='mongodb_controller',
-    version='0.2.4',
+    version='0.2.5',
     packages=find_packages(),
-    install_requires=[
-        'pymongo>=4.10.1',
-        'pandas>=2.2.3',
-        'python-dotenv>=1.0.0',
-        'aws-s3-controller>=0.7.5',
-        'shining-pebbles>=0.5.3',
-    ],
+    install_requires=required,
     author='June Young Park',
     author_email='juneyoungpaak@gmail.com',
     description='A Python module for managing fund time series data using MongoDB',

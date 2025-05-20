@@ -11,6 +11,11 @@ A Python module for managing fund time series data using MongoDB. This module pr
 
 ## Version History
 
+### 0.2.5 (2025-05-21)
+- Added date range query functions for time series data
+- Enhanced MongoDB keys module with support for new collections
+- Improved data retrieval capabilities for collections 3233, 3412, and 3421
+
 ### 0.2.4 (2025-04-14)
 - 편의성 모듈 추가
 - MongoDB 컬렉션 상수 구조 개선

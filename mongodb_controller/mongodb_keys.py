@@ -3,11 +3,10 @@ from .mongodb_collections import (
     COLLECTION_2160,
     COLLECTION_2205_SNAPSHOT,
     COLLECTION_8186,
+    COLLECTION_ESAFE,
     COLLECTION_3233,
     COLLECTION_3412,
-    COLLECTION_3421,
-    COLLECTION_BBG_TIMESERIES,
-    COLLECTION_ESAFE
+    COLLECTION_3421
 )
 
 def get_keys_of_collection(collection):
@@ -24,9 +23,6 @@ def get_keys_menu2205():
 
 def get_keys_menu8186():
     return get_keys_of_collection(COLLECTION_8186)
-
-def get_keys_bbg_timeseries():
-    return get_keys_of_collection(COLLECTION_BBG_TIMESERIES)
 
 def get_keys_esafe():
     return get_keys_of_collection(COLLECTION_ESAFE)
